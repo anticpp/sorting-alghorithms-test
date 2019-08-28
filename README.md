@@ -7,6 +7,7 @@ Sorting algorithm test
 - bbsort: Bidirectional bubble sort
 - qsort: Quick sort
 - hsort: Heap sort
+- msort: Merge sort
 
 
 ## Usage
@@ -27,14 +28,15 @@ Usage: ./sort [options]
 Test number(tn): 10, Max array len(mal): 50000, Max array value(mav): 100000.
 Sort check: Off.
 
-Test[0] - Array len 38048
+Test[0] - Array len 8209
 Algorithm       Compare         Elapse(ms)     
-isort           362233121       1073.949       
-ssort           723806128       1630.646       
-bsort           723806128       5114.22        
-bbsort          723806128       4428.819       
-qsort           720350          5.544       
-hsort           13357           7.40
+isort           16925412        66.31        
+ssort           33689736        80.311       
+bsort           33689736        217.487       
+bbsort          33689736        200.497       
+qsort           121524          0.973       
+hsort           2906            1.367       
+msort           96299           32.329
 
 Test[1] ...
 ```

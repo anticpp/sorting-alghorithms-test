@@ -1,15 +1,15 @@
+#include <string.h>
+
 void msort_merge(int arr[], int s1, int s2, int s3);
 
 /* Merge sort
  */
 void msort(int arr[], int start, int end) {
     if(start>=end){
- //       printf("msort return, start %d, end %d\n", start, end);
         return;
     }
 
     int middle = (end+start)/2;
-//    printf("msort start %d, middle %d, end %d\n", start, middle, end);
     msort(arr, start, middle);
     msort(arr, middle+1, end);
     msort_merge(arr, start, middle+1, end);
@@ -33,10 +33,8 @@ void msort_merge(int arr[], int s1, int s2, int s3) {
         }
         
         // Shit to right
-        for(int i=s2; i>s1; i--) {
-            arr[i] = arr[i-1];
-        }
-
+        memmove(&arr[s1+1], &arr[s1], (s2-s1)*sizeof(int));
+        
         // Assign
         arr[s1] = y;
 

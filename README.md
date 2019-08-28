@@ -28,15 +28,15 @@ Usage: ./sort [options]
 Test number(tn): 10, Max array len(mal): 50000, Max array value(mav): 100000.
 Sort check: Off.
 
-Test[0] - Array len 8209
+Test[0] - Array len 42822
 Algorithm       Compare         Elapse(ms)     
-isort           16925412        66.31        
-ssort           33689736        80.311       
-bsort           33689736        217.487       
-bbsort          33689736        200.497       
-qsort           121524          0.973       
-hsort           2906            1.367       
-msort           96299           32.329
+isort           461131365       1361.321       
+ssort           916840431       2100.523       
+bsort           916840431       6239.693       
+bbsort          916840431       5240.482       
+qsort           821569          5.831       
+hsort           14930           8.73        
+msort           605821          31.396
 
 Test[1] ...
 ```

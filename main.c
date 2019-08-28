@@ -13,6 +13,7 @@
 #include "qsort.c"
 #include "bsort.c"
 #include "hsort.c"
+#include "msort.c"
 
 const int DEFAULT_TEST_NUM = 10;
 const int DEFAULT_MAX_ARRAY_LEN = 50000;
@@ -32,7 +33,8 @@ sort sorts[] = {
         {"bsort", bsort},
         {"bbsort", bbsort},
         {"qsort", mqsort},
-        {"hsort", hsort}
+        {"hsort", hsort},
+        {"msort", msort}
 };
 int sorts_n = sizeof(sorts)/sizeof(sort);
 

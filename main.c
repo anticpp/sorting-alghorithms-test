@@ -33,6 +33,7 @@ sort sorts[] = {
         {"bsort", bsort},
         {"bbsort", bbsort},
         {"qsort", mqsort},
+        {"qsort2", mqsort2},
         {"hsort", hsort},
         {"msort", msort}
 };

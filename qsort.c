@@ -25,3 +25,29 @@ void mqsort(int arr[], int start, int end) {
         mqsort(arr, i+1, end);
 }
 
+void mqsort2(int arr[], int start, int end) {
+    if(end<=start) {
+        return;
+    }
+    
+    int sentinel = arr[start];
+    int i = start+1;
+    int j = end;
+    while(i<=j) {
+        cnt_inc_comp();
+        if( arr[i]<sentinel ) {
+            i++;
+            continue;
+        }
+
+        swap(arr, i, j);
+        j--;       
+    }
+
+    // Now i==j+1
+    swap(arr, start, j);
+
+    mqsort2(arr, start, j-1);
+    mqsort2(arr, j+1, end);
+}
+
